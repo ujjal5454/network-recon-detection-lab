@@ -138,6 +138,20 @@ event.code: 5152 AND message: "192.168.56.101" AND message: "RECEIVE"
 
 \*\*Results:\*\* 24 hits | \*\*Use case:\*\* Detect high-volume rapid scanning behavior
 
+## Evidence Screenshots
+
+### All Reconnaissance Traffic Detected (24 events)
+![All Recon Traffic](../screenshots/01-all-recon-traffic.png)
+*Query 1 — event.code: 5152 AND message: "192.168.56.101" showing 24 hits*
+
+### SMB Port Probe Detected (5 events)
+![SMB Probe](../screenshots/02-smb-port-probe.png)
+*Query 3 — SMB port 445 probed by attacker IP*
+
+### RPC Port Probe Detected (16 events)
+![RPC Probe](../screenshots/03-rpc-port-probe.png)
+*Query 4 — RPC port 135 probed by attacker IP*
+
 
 
 \## False Positive Reduction Techniques
